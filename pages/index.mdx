@@ -1,8 +1,18 @@
-import Button from "../components/button.js";
+import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 # MDX + Next.js
 
 Look, it's a link to our explore page! 👇
 
-<Link href="explore">Go to Explore</Link>
+<Link href="/explore">
+  <Button
+    rightIcon={<ArrowForwardIcon />}
+    colorScheme="primary"
+    variant="solid"
+    mt={"6"}
+    mr={"6"}
+  >
+    Start Exploring
+  </Button>
+</Link>
