@@ -7,9 +7,10 @@ interface ExploreProps {}
 const ExplorePage: React.FC<ExploreProps> = () => {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapboxMap | null>(null);
+
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
-      <h1>ExplorePage</h1>
+      <h1>Tecnico Demo Map with Buildings</h1>
       <SimpleMap
         className="root"
         mapRef={mapRef}
